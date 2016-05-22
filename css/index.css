@@ -1,0 +1,120 @@
+body{
+	font-family: "microsoft yahei",'arial';
+	background: #666;
+}
+nav{
+	height: 52px;
+	margin-top: 60px;
+}
+.inputBox{
+	width: 860px;
+	height: 100%;
+	line-height: 60px;
+	margin: 0 auto;
+}
+input[type=text]{
+	width: 600px;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	margin-right: 6px;
+}
+.creat,.clear{
+	height: 40px;
+	font-size: 18px;
+	font-weight: 600;
+	border: none;
+	border-radius: 6px;
+	outline: none;
+	cursor: pointer;
+	margin-right: 6px;
+	padding: 0 8px;
+	color: #333;
+}
+.creat:active,.clear:active{
+	box-shadow: none;
+}
+.creat{
+	background: #11CD6E;
+	box-shadow: 0 0 14px #088E55 inset;
+}
+.clear{
+	background-color: #FC2934;
+	box-shadow: 0 0 14px #C60D15 inset;
+}
+.todoBox,.readyBox{
+	width: 800px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 30px;
+	border-radius: 6px;
+}
+header{
+	font-size: 20px;
+	border-bottom: 1px solid #666;
+	padding: 0 20px 6px;
+	line-height: 30px;
+}
+.num{
+	float: right;
+	margin-right: 20px;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #4C8CF5;
+}
+.round{
+	animation:round 1s;
+}
+@keyframes round{
+	100%{
+		transform:rotateY(360deg);
+	}
+}
+section{
+	margin: 20px 0;
+}
+.todoList,.readyList{
+	padding: 20px;
+}
+.todoList li,.readyList li{
+	min-height: 40px;
+	line-height: 40px;
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 10px;
+}
+input[type=checkbox]{
+	width: 28px;
+	height: 28px;
+	float: left;
+	margin-top: 6px;
+}
+button.del{
+	float: right;
+	width: 28px;
+	height: 28px;
+	margin-top: 5px;
+	background: none;
+	outline: none;
+	border: none;
+	background: url(../images/del.png) no-repeat center;
+	background-size: 100%;
+	cursor: pointer;
+}
+span{
+	display: block;
+	min-height: 40px;
+	width: 100%;
+	line-height: 40px;
+	padding: 0 60px 0 40px;
+	box-sizing:border-box;
+	outline: none;
+}
+span.readyThing{
+	color: #666666;
+}
